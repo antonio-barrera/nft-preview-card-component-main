@@ -1,5 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --primary-blue: hsl(215, 51%, 70%);
+    --primary-cyan: hsl(178, 100%, 50%);
+    --primary-white: hsl(0, 0%, 100%);
+    --background-blue: hsl(217, 54%, 11%);
+    --card-blue: hsl(216, 50%, 16%);
+    --line-blue: hsl(215, 32%, 27%);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@media (max-width: 23.44em) {
+    html {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.8rem;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: var(--background-blue);
+}
+
+a {
+    color: var(--primary-white);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-cyan);
+}
+
+.container {
+    width: 30rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    background: var(--card-blue);
+}
+
+.token-image {
+    width: 100%;
+    height: 30rem;
+    position: relative;
+    border-radius: 1rem;
+    background: var(--primary-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.equilibrium-image {
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/image-equilibrium.jpg);
+    border-radius: 0.5rem;
+    opacity: 1;
+}
+
+.middle {
+    text-align: center;
+    position: absolute;
+    opacity: 0;
+}
+
+.token-image:hover .equilibrium-image {
+    opacity: 0.5;
+}
+
+.token-image:hover .middle {
+    opacity: 0.5;
+}
+
+.token-name {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.token-desc {
+    font-weight: 300;
+    color: var(--primary-blue);
+}
+
+.token-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+}
+
+.token-info div {
+    width: 10rem;
+    padding: 0 0 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.token-info .price {
+    color: var(--primary-cyan);
+}
+
+.token-info .time {
+    color: var(--primary-blue);
+}
+
+.token-info img {
+    object-fit: contain;
+}
+
+hr {
+    border: none;
+    height: 0.2rem;
+    background: var(--line-blue);
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+
+.author img {
+    height: 3.5rem;
+    width: auto;
+    border: solid var(--primary-white) 0.2rem;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+}
+
+.author span {
+    color: var(--primary-blue);
+}
+
 .attribution { 
-    font-size: 11px; text-align: center; 
+    font-size: 11px; 
+    text-align: center; 
+    position: absolute;
+    bottom: 0;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
