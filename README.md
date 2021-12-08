@@ -74,5 +74,5 @@ One of the main things I'd like to highlight on this project is the continuos im
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/antonio-barrera)
-- Twitter - [@yourusername](https://www.twitter.com/soyantoniob)
+- Frontend Mentor - [@antonio-barrera](https://www.frontendmentor.io/profile/antonio-barrera)
+- Twitter - [@soyantoniob](https://www.twitter.com/soyantoniob)
